@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export const Footer = () => {
   return (
@@ -98,5 +97,6 @@ export const Footer = () => {
         </div>
       </div>
     </div>
+     
   );
 };
