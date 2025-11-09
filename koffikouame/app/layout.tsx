@@ -1,7 +1,11 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import {Footer}  from "@/components/Footer";
-import Script from 'next/script';
+
+export const metadata = {
+  title: "Portfolio de M. KOUAME",
+  description: "Mon site personnel",
+};
 
 export default function RootLayout({
   children,
@@ -15,7 +19,6 @@ export default function RootLayout({
         {children}
         <Footer />
       </body>
-      <Script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js" />
     </html>
   );
 }
