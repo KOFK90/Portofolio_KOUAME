@@ -37,6 +37,7 @@ const Home = () => {
       }
     } catch (err) {
       setStatus({ ok: false, message: "Impossible de contacter le serveur." });
+      console.error(err);
     } finally {
       setLoading(false);
     }
