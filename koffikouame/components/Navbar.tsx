@@ -7,14 +7,14 @@ import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname(); 
+  const pathname = usePathname();
 
   const links = [
     { href: "/", label: "Accueil" },
     { href: "/apropos", label: "Me Concernant" },
     { href: "/competences", label: "Ce que je sais faire" },
     { href: "/realisations", label: "Ce que j’ai déjà fais" },
-    { href: "/extraprofessionnel", label: "Extra professionnel" },
+    { href: "/extraprofessionnel", label: "Extra" },
     { href: "/#contact", label: "Me contacter" },
   ];
 
@@ -79,18 +79,22 @@ const Navbar = () => {
           } w-full lg:flex lg:w-auto lg:order-1`}
           id="mobile-menu-2"
         >
-             <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+          <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
             {links.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className={`block py-2 pl-3 pr-4 rounded lg:p-0 transition-colors duration-200
-                    ${
-                      pathname === link.href
-                        ? "text-purple-700 font-semibold dark:text-white"
-                        : "text-gray-700 hover:text-purple-700 dark:text-gray-400 dark:hover:text-white"
-                    }`}
+                  className={`
+                          block py-2 px-4 rounded-md transition-all duration-200
+                          ${
+                            pathname === link.href
+                              ? "bg-white text-purple-800 font-semibold dark:bg-gray-200"
+                              : "text-gray-700 dark:text-gray-400"
+                          }
+                         hover:bg-white hover:text-purple-800
+                         focus:bg-white focus:text-purple-800
+                        `}
                 >
                   {link.label}
                 </Link>
