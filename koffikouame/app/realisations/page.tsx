@@ -8,23 +8,30 @@ import ProjectCard from "../../components/ProjectCard";
 
 const projects = [
 {
-title: "Plateforme e‑commerce (Exemple)",
-tags: ["Next.js", "Stripe", "MongoDB", "Tailwind"],
+title: "Yowl: Plateforme pour commenter les URL sans être censuré",
+tags: ["Full Laravel", "Prototypage Figma", "Mysql", "Tailwind"],
+
 description:
-"Boutique en ligne full‑stack avec dashboard admin, gestion des produits, paiements et SEO optimisé.",
+"La plateforme avait pour objectif principale de permettre à tous ses utilisateurs de pouvoir commenter n'importe quelle URL sans courrir le risque de se faire censurer",
 link: "#",
 },
 {
-title: "Application de Gestion de Ferme",
-tags: ["React", "Node.js", "Postgres", "Charts"],
+title: "Tomatoes: inspiré de my rotten tomatoes",
+tags: ["Next.js", "Node.js", "API REST", "Mongodb", "Tailwind"],
 description:
-"Solution interne pour suivre production, stocks et ventes (tableaux de bord, alertes).",
+"Inspiré du site web my rotten tomatoes, notre plateforme permettait à ses utilisateurs de pouvoir commenter, noter et ajouter un film en favoris. En guise de bonus mon équipe et moi avons rajouté une option streaming",
 link: "#",
 },
 {
-title: "Site Vitrine + SEO pour Cabinet",
-tags: ["PHP", "Laravel", "MySQL", "SEO"],
-description: "Refonte complète, optimisation référencement et maintenance continue.",
+title: "Dasboard: Widgets board",
+tags: ["React.js", "Nest.js", "API REST", "Mongodb", "Tailwind"],
+description: "Plateforme permettant à l'utilisateur d'acceder à un board ou il peut choisir des widgets qui s'ajoutent automatiquement à sa selection",
+link: "#",
+},
+{
+title: "Trello Clone: Application mobile de Trello",
+tags: ["React Native", "API REST", "Tailwind"],
+description: "La version mobile de la plateforme Trello, grâce à l'API public de Trello",
 link: "#",
 },
 ];

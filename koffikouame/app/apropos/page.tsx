@@ -2,18 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import SkillBadge from "../../components/SkillBadge";
-import Timeline from "../../components/Timeline";
 
-const skills = [
-  { name: "React.js", level: 85 },
-  { name: "Next.js", level: 80 },
-  { name: "Node.js / Nest", level: 75 },
-  { name: "PHP / Laravel", level: 70 },
-  { name: "Python / Flask", level: 65 },
-  { name: "MySQL / MongoDB", level: 78 },
-  { name: "HTML / CSS / Tailwind", level: 88 },
-];
 
 export default function APropos() {
   return (
@@ -21,17 +10,17 @@ export default function APropos() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="min-h-screen p-10 bg-gray-900 text-gray-100"
+      className="min-h-screen p-10 bg-white text-gray-800"
     >
       <div className="max-w-6xl mx-auto space-y-8">
-        <header className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        {/* <header className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
             <h1 className="text-4xl font-extrabold">À propos</h1>
             <p className="mt-2 text-gray-300 max-w-2xl">
-              Créateur de solutions digitales, développeur full‑stack avec une
+              Créateur de solutions digitales, développeur full-stack avec une
               forte appétence pour les expériences utilisateur performantes et
               le code maintenable. J&apos;allie compétences techniques
-              (Full‑stack) et sens business acquis par mes expériences en
+              (Full-stack) et sens business acquis par mes expériences en
               gestion de projets et marketing.
             </p>
           </div>
@@ -40,38 +29,67 @@ export default function APropos() {
             <p className="text-sm text-gray-400">Abidjan, Côte d&apos;Ivoire</p>
             <p className="text-sm text-gray-400">koffi.kouame@epitech.eu</p>
           </div>
-        </header>
+        </header> */}
 
-        {/* Skills grid */}
-        <section className="bg-gradient-to-r from-gray-800 to-gray-700 rounded-2xl p-6 shadow-lg">
-          <h2 className="text-2xl font-semibold mb-4">
-            Compétences techniques
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {skills.map((s) => (
-              <SkillBadge key={s.name} name={s.name} level={s.level} />
-            ))}
+        {/* Nouvelle Section — Parcours & Formations */}
+        <motion.section
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="bg-white text-gray-700 rounded-2xl p-6 shadow-lg flex flex-col md:flex-row gap-8"
+        >
+          {/* Espace portrait */}
+          <div className="w-full md:w-1/3 h-64 bg-gray-200 rounded-xl shadow-inner flex items-center justify-center">
+            <span className="text-gray-400 text-sm">
+              <motion.img
+                  src="/assets/images/Portrait2.png"
+                  alt="Photo de KOUAME Koffi Kan Nazaire"
+                  width={450}
+                  height={450}
+                  // className="object-cover rounded-2xl shadow-xl transition-transform duration-300 hover:scale-105"
+                  whileHover={{ scale: 1.03 }}
+                />
+              — KOUAME Koffi Kan Nazaire —
+            </span>
           </div>
-        </section>
 
-        {/* Timeline */}
-        <section className="bg-gradient-to-r from-gray-800 to-gray-700 rounded-2xl p-6 shadow-lg">
-          <h2 className="text-2xl font-semibold mb-4">
-            Parcours & expériences
-          </h2>
-          <Timeline />
-        </section>
+          {/* Texte */}
+          <div className="flex-1 space-y-4">
+            <h2 className="text-2xl font-bold text-black">
+              Parcours scolaire & formations
+            </h2>
 
-        <section className="bg-gradient-to-r from-gray-800 to-gray-700 rounded-2xl p-6 shadow-lg">
-          <h2 className="text-2xl font-semibold mb-4">Soft skills & vision</h2>
-          <p className="text-gray-300">
-            Leadership, rigueur, créativité et sens de l&apos;organisation. Je
-            conçois des solutions qui répondent autant aux besoins techniques
-            qu&apos;aux objectifs métier. En tant que développeur full‑stack,
-            j&apos;optimise les performances, l&apos;accessibilité et
-            l&apos;expérience globale.
-          </p>
-        </section>
+            <p>
+              Mon parcours a été marqué par deux grandes reconversions qui ont
+              forgé ma vision et ma manière d’aborder les projets. J&apos;ai
+              d&apos;abord débuté dans le domaine des <strong>Mines, Géologie et
+              Pétrole</strong> avec un BTS, puis je me suis orienté vers une
+              carrière de <strong>Technico-commercial</strong>. Ces premières
+              expériences m&apos;ont permis de développer des qualités telles
+              que la communication, l&apos;organisation et la gestion efficace
+              de projets.
+            </p>
+
+            <p>
+              Ma seconde reconversion, guidée par ma passion pour le digital, m’a
+              conduit au métier de <strong>développeur full-stack</strong>. J&apos;y ai
+              acquis plus de trois ans d’expérience en développement web,
+              marketing digital, SEO et web design. Je conçois aujourd’hui des
+              applications modernes, efficaces et pensées pour répondre à des
+              besoins métiers concrets.
+            </p>
+
+            <p>
+              Mes <strong>soft skills</strong> — leadership, créativité, rigueur,
+              capacité d’adaptation et sens de l’analyse — me permettent
+              d&apos;évoluer avec une vision claire : <strong>apporter des solutions
+              viables, durables et adaptées aux problèmes réels</strong>, en mettant
+              le digital au service des usages, des entreprises et des
+              utilisateurs.
+            </p>
+          </div>
+        </motion.section>
       </div>
     </motion.main>
   );

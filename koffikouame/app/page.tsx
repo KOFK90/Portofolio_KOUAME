@@ -96,14 +96,14 @@ const Home = () => {
       </motion.section>
 
       {/* SECTION CONTACT */}
-      <motion.section
+      <motion.section id="contact"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
         className="w-full bg-gray-200 p-10 shadow-xl flex flex-col items-center space-y-10"
       >
-        <h2 className="text-4xl font-bold text-black">Contact</h2>
+        <h2 className="text-4xl font-bold text-black">Contacts</h2>
 
         <div className="grid md:grid-cols-2 gap-10 w-full max-w-4xl">
           {/* Infos */}

@@ -11,7 +11,7 @@ return (
 initial={{ opacity: 0, y: 10 }}
 animate={{ opacity: 1, y: 0 }}
 transition={{ duration: 0.6 }}
-className="min-h-screen p-10 bg-gray-900 text-gray-100"
+className="min-h-screen p-10 bg-white text-gray-800"
 >
 <div className="max-w-5xl mx-auto space-y-6">
 <h1 className="text-4xl font-extrabold">Expériences extra‑professionnelles</h1>
