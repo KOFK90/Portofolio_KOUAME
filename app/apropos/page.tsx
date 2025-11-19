@@ -78,7 +78,9 @@ export default function APropos() {
               applications modernes, efficaces et pensées pour répondre à des
               besoins métiers concrets.
             </p>
-
+            <h2 className="text-2xl font-bold text-black text-justify">
+              Soft Skills & Vision
+            </h2>
             <p className="text-justify">
               Mes <strong>soft skills</strong> — leadership, créativité, rigueur,
               capacité d’adaptation et sens de l’analyse — me permettent

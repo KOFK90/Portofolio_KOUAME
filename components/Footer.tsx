@@ -11,11 +11,15 @@ export const Footer = () => {
                 <span className="text-rose-600">Monsieur </span> KOUAME
               </h1>
             </p>
-            <p className="mt-[18px] text-[15px] font-normal text-white/80">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
-              fugit non. Incidunt dolorum adipisci, tempore asperiores nemo odio
-              facere officiis enim animi placeat eaque nesciunt alias beatae id,
-              at dicta.
+            <p className="mt-[18px] text-[15px] font-normal text-white/80 text-justify ">
+          
+              Mes <strong>soft skills</strong> — leadership, créativité, rigueur,
+              capacité d’adaptation et sens de l’analyse — me permettent
+              d&apos;évoluer avec une vision claire : <strong>apporter des solutions
+              viables, durables et adaptées aux problèmes réels</strong>, en mettant
+              le digital au service des usages, des entreprises et des
+              utilisateurs.
+            
             </p>
             <div className="mt-[18px] flex gap-4"></div>
           </div>
