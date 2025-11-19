@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import SkillBadge from "../../components/SkillBadge";
 import Timeline from "../../components/Timeline";
 import { motion } from "framer-motion";
@@ -18,10 +18,10 @@ export default function Competences() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="min-h-screen p-10 bg-white text-gray-800"
+      className="min-h-screen p-10 bg-white text-gray-100"
     >
       <div className="max-w-6xl mx-auto space-y-8">
-    {/* Skills grid */}
+        {/* Skills grid */}
         <section className="bg-gradient-to-r from-gray-800 to-gray-700 rounded-2xl p-6 shadow-lg">
           <h2 className="text-2xl font-semibold mb-4">
             Compétences techniques
@@ -40,19 +40,43 @@ export default function Competences() {
           </h2>
           <Timeline />
         </section>
-
+        <section className="bg-gradient-to-r from-gray-800 to-gray-700 rounded-2xl p-6 shadow-lg">
+          <h2 className="text-2xl font-semibold">
+            Commercial & Technico‑commercial
+          </h2>
+          <p className="text-gray-300 mt-2">
+            Formation technico‑commerciale, création de réseau de distribution
+            et promotion de marque. Je combine la technique et la vente :
+            comprendre un besoin, proposer une solution, et l&apos;accompagner
+            jusqu&apos;à son adoption.
+          </p>
+        </section>
+        <section className="bg-gradient-to-r from-gray-800 to-gray-700 rounded-2xl p-6 shadow-lg">
+          <h2 className="text-2xl font-semibold">
+            Formation & parcours initial
+          </h2>
+          <p className="text-gray-300 mt-2">
+            Technicien supérieur en Mines‑Géologie‑Pétrole (BTS) — puis
+            reconversion vers le développement web et le marketing digital. Ce
+            parcours atypique explique ma méthodologie orientée données et
+            process.
+          </p>
+        </section>
         <section className="bg-gradient-to-r from-gray-800 to-gray-700 rounded-2xl p-6 shadow-lg">
           <h2 className="text-2xl font-semibold mb-4">Soft skills & vision</h2>
           <p className="text-gray-300">
-              Mes <strong>soft skills</strong> — leadership, créativité, rigueur,
-              capacité d’adaptation et sens de l’analyse — me permettent
-              d&apos;évoluer avec une vision claire : <strong>apporter des solutions
-              viables, durables et adaptées aux problèmes réels</strong>, en mettant
-              le digital au service des usages, des entreprises et des
-              utilisateurs.
-            </p>
+            Mes <strong>soft skills</strong> — leadership, créativité, rigueur,
+            capacité d’adaptation et sens de l’analyse — me permettent
+            d&apos;évoluer avec une vision claire :{" "}
+            <strong>
+              apporter des solutions viables, durables et adaptées aux problèmes
+              réels
+            </strong>
+            , en mettant le digital au service des usages, des entreprises et
+            des utilisateurs.
+          </p>
         </section>
-    </div>
+      </div>
     </motion.main>
   );
 }

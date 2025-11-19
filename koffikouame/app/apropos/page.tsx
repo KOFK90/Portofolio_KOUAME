@@ -40,14 +40,13 @@ export default function APropos() {
           className="bg-white text-gray-700 rounded-2xl p-6 shadow-lg flex flex-col md:flex-row gap-8"
         >
           {/* Espace portrait */}
-          <div className="w-full md:w-1/3 h-64 bg-gray-200 rounded-xl shadow-inner flex items-center justify-center">
+          <div className="object-cover rounded-2xl shadow-xl transition-transform duration-300 hover:scale-105">
             <span className="text-gray-400 text-sm">
               <motion.img
                   src="/assets/images/Portrait2.png"
                   alt="Photo de KOUAME Koffi Kan Nazaire"
-                  width={450}
-                  height={450}
-                  // className="object-cover rounded-2xl shadow-xl transition-transform duration-300 hover:scale-105"
+                  width={270}
+                  height={300}
                   whileHover={{ scale: 1.03 }}
                 />
               — KOUAME Koffi Kan Nazaire —
@@ -56,11 +55,11 @@ export default function APropos() {
 
           {/* Texte */}
           <div className="flex-1 space-y-4">
-            <h2 className="text-2xl font-bold text-black">
+            <h2 className="text-2xl font-bold text-black text-justify">
               Parcours scolaire & formations
             </h2>
 
-            <p>
+            <p className="text-justify">
               Mon parcours a été marqué par deux grandes reconversions qui ont
               forgé ma vision et ma manière d’aborder les projets. J&apos;ai
               d&apos;abord débuté dans le domaine des <strong>Mines, Géologie et
@@ -71,7 +70,7 @@ export default function APropos() {
               de projets.
             </p>
 
-            <p>
+            <p className="text-justify">
               Ma seconde reconversion, guidée par ma passion pour le digital, m’a
               conduit au métier de <strong>développeur full-stack</strong>. J&apos;y ai
               acquis plus de trois ans d’expérience en développement web,
@@ -80,7 +79,7 @@ export default function APropos() {
               besoins métiers concrets.
             </p>
 
-            <p>
+            <p className="text-justify">
               Mes <strong>soft skills</strong> — leadership, créativité, rigueur,
               capacité d’adaptation et sens de l’analyse — me permettent
               d&apos;évoluer avec une vision claire : <strong>apporter des solutions
