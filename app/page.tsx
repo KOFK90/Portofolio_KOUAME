@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const buttonBase =
   "w-full text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-3 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800";
@@ -111,13 +112,25 @@ const Home = () => {
             <p><strong>Email :</strong> koffi.kouame@epitech.eu</p>
             <p><strong>Téléphone :</strong> +2250709100126</p>
             <p>
-              <Link href="https://github.com/kouame" className="text-purple-700 hover:underline font-semibold">
-                Github
+              <Link 
+              href="https://github.com/KOFK90"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visiter mon profil GitHub" 
+              className="text-purple-700 hover:underline font-semibold">
+              Github
+              <FaGithub className="h-8 w-8  text-purple-500 hover:text-purple-700 transition duration-300" />
               </Link>
             </p>
             <p>
-              <Link href="https://linkedin.com/in/kouame" className="text-purple-700 hover:underline font-semibold">
-                Linkedin
+              <Link 
+              href="https://www.linkedin.com/in/koffi-kan-nazaire-kouame-978167372/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visiter mon profil LinkedIn"
+              className="text-purple-700 hover:underline font-semibold">
+              Linkedin
+              <FaLinkedin className="h-8 w-8 text-purple-500 hover:text-purple-700 transition duration-300" />
               </Link>
             </p>
           </div>
