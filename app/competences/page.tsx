@@ -42,17 +42,6 @@ export default function Competences() {
         </section>
         <section className="bg-gradient-to-r from-gray-800 to-gray-700 rounded-2xl p-6 shadow-lg">
           <h2 className="text-2xl font-semibold">
-            Commercial & Technico‑commercial
-          </h2>
-          <p className="text-gray-300 mt-2">
-            Formation technico‑commerciale, création de réseau de distribution
-            et promotion de marque. Je combine la technique et la vente :
-            comprendre un besoin, proposer une solution, et l&apos;accompagner
-            jusqu&apos;à son adoption.
-          </p>
-        </section>
-        <section className="bg-gradient-to-r from-gray-800 to-gray-700 rounded-2xl p-6 shadow-lg">
-          <h2 className="text-2xl font-semibold">
             Formation & parcours initial
           </h2>
           <p className="text-gray-300 mt-2">
@@ -62,6 +51,18 @@ export default function Competences() {
             process.
           </p>
         </section>
+        <section className="bg-gradient-to-r from-gray-800 to-gray-700 rounded-2xl p-6 shadow-lg">
+          <h2 className="text-2xl font-semibold">
+            Commercial & Technico‑commercial
+          </h2>
+          <p className="text-gray-300 mt-2">
+            Formation technico‑commerciale, création de réseau de distribution
+            et promotion de marque. Je combine la technique et la vente :
+            comprendre un besoin, proposer une solution, et l&apos;accompagner
+            jusqu&apos;à son adoption.
+          </p>
+        </section>
+        
         <section className="bg-gradient-to-r from-gray-800 to-gray-700 rounded-2xl p-6 shadow-lg">
           <h2 className="text-2xl font-semibold mb-4">Soft skills & vision</h2>
           <p className="text-gray-300">
